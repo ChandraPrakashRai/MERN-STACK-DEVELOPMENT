@@ -1,9 +1,10 @@
 # 🚀 MERN Stack Development
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/mern-stack-development?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/your-username/mern-stack-development?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/your-username/mern-stack-development?style=for-the-badge)
-![Profile Views](https://komarev.com/ghpvc/?username=your-username&style=for-the-badge&color=blue)
+![GitHub repo size](https://img.shields.io/github/repo-size/ChandraPrakashRai/MERN-STACK-DEVELOPMENT?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/ChandraPrakashRai/MERN-STACK-DEVELOPMENT?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/ChandraPrakashRai/MERN-STACK-DEVELOPMENT?style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=ChandraPrakashRai&style=for-the-badge&color=blue)
+
 
 ---
 
