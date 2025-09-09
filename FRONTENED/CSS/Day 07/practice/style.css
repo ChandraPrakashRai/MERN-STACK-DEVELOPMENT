@@ -1,0 +1,25 @@
+h2{
+    color: black;
+    font-size: 50px;
+}
+h3{
+    color: blue;
+    font-size: 33px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.first{
+    color: black;
+    font-size: 2em;
+    font-style: oblique;
+    
+}
+button{
+    color: white;
+    font-size: 25px;
+    background-color: red;
+}
+#center{
+    text-align: center;
+}
