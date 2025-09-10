@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+   background: linear-gradient(270deg, #ff4e50, #fc913a, #f9d423, #eae374, #e1f5c4, #e2f0cb, #c5e1a5);
+      
+}
+
+h1{
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 30px;
+    background-color: aqua;
+    color: red;
+    font-size: 45px;
+    border-radius: 5%;
+    text-align: center;
+    margin-left: 10%;
+
+}
+
+.para{
+    height: 150px;
+    width: 550px;
+    border: solid 2px black;
+    padding: 11px;
+    text-align: left;
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}   
+.mentor {
+  display: inline-block;   /* span ko box jaisa banata hai */
+  border: 2px solid #333;  /* border show karne ke liye */
+  padding: 10px;           /* andar ka space */
+  margin: 10px 0;          /* upar niche ka gap */
+  background-color: #f9f9f9; /* halka background */
+  border-radius: 12px;      /* thoda gol corner */
+}
+
+.img1 {
+    padding-left: 20px;
+  display: block;          /* image ko alag line pe laane ke liye */
+  margin-top: 8px;
+  max-width: 150px;        /* image chhoti rahe */
+  border: 2px solid #555;  
+}
+.mainimg{
+    padding-left: 50px;
+    margin: 20px;
+    border-radius: 5%;
+}
