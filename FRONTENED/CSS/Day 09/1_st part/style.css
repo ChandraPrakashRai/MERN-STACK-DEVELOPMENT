@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+h1{
+    color: red;
+}
+.class1{
+    background: #000;
+}
+#id1{
+    background: rgb(239, 239, 30) ;
+}
+.st{
+    background-color: blue;
+    position:static;
+    top: 10px;
+}
+.rel{
+   
+    position: relative;
+    background: greenyellow;
+    top: 10px;
+    left: 33px;
+    bottom: 10px;
+     z-index: 40;
+}
+.fix{
+    position: fixed;
+    background: greenyellow;
+    /* bottom: 20px; */
+    top: 20px;
+    left: 250px;
+}
+.fixed{
+    background-color: rgb(162, 212, 232);
+    position: relative;
+    bottom: 20px;
+   
+}
+
+.box1{
+    height: 500px;
+    width: 300px;
+    background-color: rgb(249, 97, 97);
+}
+.box2{
+    height: 100px;
+    left: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: sticky;top: 0px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+}
+.box4{
+    height: 400px;
+    width: 600px;
+    background-color: orange;
+
+}
+.box5{
+    height: 700px;
+    width: 100px;
+    background-color: slateblue;
+}

@@ -1,0 +1,26 @@
+.box1{
+    background-color: #FF9933;
+    height: 200px;
+    width: 600px;
+}
+.box2{
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 600px;
+}
+.box3{
+    background-color: #199D0B;
+    height: 200px;
+    width: 600px;
+}
+.img{
+    height: 200px;
+    width: 250px;
+    position:relative;
+    bottom: 400px;
+    left: 164px;
+}
+.maindiv{
+    position: relative;
+    left: 50px;
+}
