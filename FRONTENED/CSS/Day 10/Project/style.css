@@ -1,6 +1,6 @@
 .main{
     background-color: #7596E6;
-    height: 1000px;
+    height: 800px;
     width: 1000px;
     display: flex;
     justify-content: center;
@@ -15,4 +15,11 @@
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 65px;
+    padding-top: 60px;
+}
+button{
+    width: 200px;
+}
+.input{
+    padding-top: 25px;
 }
