@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .container{
+    height: 400px;
+    width: 400px;
+    background-color: #55db28;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+} */
+
+/* concept of fr */
+     .container{
+    height: 400px;
+    width: 400px;
+    background-color: #55db28;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+   }
+
+.box1{
+    background-color: #800c0c;
+}
+.box2{
+    background-color: #dcb2b2;
+}
+.box3{
+    background-color: #665555;
+}
+.box4{
+    background-color: #1c0101;
+}
