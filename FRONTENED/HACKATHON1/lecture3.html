@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lecture 3: HTML Basics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lecture 3 - HTML Nested Lists & Tables</title>
 </head>
 <body>
-
-   <nav>
+  
+      <nav>
     <a href="index.html">Home</a> |
     <a href="lecture1.html">Lecture 1</a> |
     <a href="lecture2.html">Lecture 2</a> |
@@ -16,111 +17,367 @@
     <a href="lecture6.html">Lecture 6</a>
   </nav>
 
-<h1>HTML : Hyper Text Markup Language</h1>
+  <h1>HTML Nested Lists & Tables: The Complete Guide</h1>
+  <p>
+    In this lecture, we will explore two very important concepts of HTML:
+    <b>Nested Lists</b> and <b>Tables</b>.  
+    These elements help us structure data in a clean, readable way.
+  </p>
 
-<p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. 
-It is the standard language used to create and structure the content of a webpage.</p>
+  <h2>🎥 Lecture 3 Video</h2>
+  <!-- YouTube Embed (kept same as you said) -->
 
-<ul>
-    <li><strong>HyperText:</strong> Connect web pages to one another, forming a "web" of information.</li>
-    <li><strong>Markup Language:</strong> Use of tags to structure and give meaning to content.</li>
-</ul>
-<h2> Lecture 3 Video</h2>
-  <!-- YouTube Embed -->
-<iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/AJ4E1zf5tQs?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X&index=3" 
-        title="Lecture 3 Video" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>
 
-<h2>1. Headings (&lt;h1&gt; to &lt;h6&gt;)</h2>
-<p>Headings create hierarchy for your webpage:</p>
+      <table  border="2">
+  <tr >
+    <td> 
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/AJ4E1zf5tQs?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X&index=3" 
+          title="Lecture 3 Video" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</td>
+    <td>
+      <img height="180px" width="200px" src="data:image/jpeg;base64,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" alt="">
+        <li><a href="notes/lecture3-notes.pdf" target="_blank">Lecture 3 Notes (PDF)</a></li>
 
-<pre>
-&lt;h1&gt;My Daily Routine&lt;/h1&gt;
-&lt;h2&gt;Morning Tasks&lt;/h2&gt;
-&lt;h3&gt;Exercise&lt;/h3&gt;
-&lt;h3&gt;Breakfast&lt;/h3&gt;
-&lt;h2&gt;Work Tasks&lt;/h2&gt;
-&lt;h3&gt;Emails&lt;/h3&gt;
-&lt;h3&gt;Meetings&lt;/h3&gt;
-</pre>
+    </td>
+  </tr>
+ </table>
 
-<ul>
-    <li>&lt;h1&gt;: Main page title</li>
-    <li>&lt;h2&gt;: Section title</li>
-    <li>&lt;h3&gt; - &lt;h6&gt;: Subsections of decreasing importance</li>
-</ul>
+  <hr>
 
-<h2>2. Paragraphs (&lt;p&gt;)</h2>
-<p>Used to group sentences about a single topic:</p>
+  <h2>1. Introduction to Nested Lists</h2>
+  <p>
+    Nested lists mean placing one list <b>inside another list</b>.  
+    HTML supports both <b>unordered (bullets)</b> and <b>ordered (numbers/letters)</b> lists.  
+  </p>
 
-<pre>
-&lt;p&gt;I start my day with a short workout and a healthy breakfast.&lt;/p&gt;
-&lt;p&gt;Later, I focus on coding practice and completing work assignments.&lt;/p&gt;
-</pre>
-
-<h2>3. Horizontal Rule (&lt;hr&gt;)</h2>
-<p>Used to separate sections:</p>
-
-<pre>
-&lt;p&gt;Morning Routine&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;Work Tasks&lt;/p&gt;
-</pre>
-
-<h2>4. Line Break (&lt;br&gt;)</h2>
-<p>For breaking lines within content:</p>
-
-<pre>
-&lt;p&gt;Home Address:<br&gt;
-123 Main Street<br&gt;
-City, Country&lt;/p&gt;
-</pre>
-
-<h2>5. Lists (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h2>
-<p>Organize daily tasks in lists:</p>
-
-<pre>
+  <pre>
 &lt;ul&gt;
-  &lt;li&gt;Buy groceries&lt;/li&gt;
-  &lt;li&gt;Walk the dog&lt;/li&gt;
-  &lt;li&gt;Call a friend&lt;/li&gt;
-  &lt;li&gt;Read a book&lt;/li&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+      &lt;li&gt;Mango&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vegetables
+    &lt;ul&gt;
+      &lt;li&gt;Carrot&lt;/li&gt;
+      &lt;li&gt;Broccoli&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+  </pre>
 
+  <h5>output of the above code: </h5>
+  <ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Mango</li>
+    </ul>
+  </li>
+  <li>Vegetables
+    <ul>
+      <li>Carrot</li>
+      <li>Broccoli</li>
+    </ul>
+  </li>
+</ul>
+ 
+
+  <hr>
+
+  <h2>2. Ordered List inside Unordered List</h2>
+  <pre>
+&lt;ul&gt;
+  &lt;li&gt;Steps to Bake Cake:
+    &lt;ol&gt;
+      &lt;li&gt;Mix ingredients&lt;/li&gt;
+      &lt;li&gt;Preheat oven&lt;/li&gt;
+      &lt;li&gt;Bake for 30 minutes&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+  <h4>output for the above code example:</h5>
+   <ul>
+  <li>Steps to Bake Cake:
+    <ol>
+      <li>Mix ingredients</li>
+      <li>Preheat oven</li>
+      <li>Bake for 30 minutes</li>
+    </ol>
+  </li>
+</ul>
+
+  <hr>
+
+  <h2>3. Multi-level Nested List</h2>
+  <pre>
 &lt;ol&gt;
-  &lt;li&gt;Wake up at 6 AM&lt;/li&gt;
-  &lt;li&gt;Exercise for 30 minutes&lt;/li&gt;
-  &lt;li&gt;Have breakfast&lt;/li&gt;
-  &lt;li&gt;Start work/study&lt;/li&gt;
+  &lt;li&gt;Programming Languages
+    &lt;ul&gt;
+      &lt;li&gt;Frontend
+        &lt;ul&gt;
+          &lt;li&gt;HTML&lt;/li&gt;
+          &lt;li&gt;CSS&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Backend
+        &lt;ul&gt;
+          &lt;li&gt;Python&lt;/li&gt;
+          &lt;li&gt;Java&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
-</pre>
+  </pre>
 
-<h2>6. Anchor Tag (&lt;a&gt;)</h2>
-<p>To create clickable links:</p>
+  <h4>output for the above code: </h5>
+  <ol>
+  <li>Programming Languages
+    <ul>
+      <li>Frontend
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </li>
+      <li>Backend
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
 
-<pre>
-&lt;a href="https://www.coderarmy.in/" target="_blank"&gt;Visit Coder Army&lt;/a&gt;
-</pre>
+  <p><b>Image Placeholder:</b></p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxInqmlXMbdneyZ52ltYRjpqLujAawhde8EA&sL" alt="Multi-level Nested List" width="400">
 
-<h2>7. Image Tag (&lt;img&gt;)</h2>
-<p>Display images with proper description:</p>
+  <hr>
 
-<!-- Placeholder for user image -->
-<p>Image Placeholder:</p>
-<img src="PLACEHOLDER_IMAGE_URL" alt="Describe Image" width="300" height="300">
+  <h2>4. Introduction to Tables</h2>
+  <p>
+    Tables allow us to arrange data in <b>rows</b> and <b>columns</b>.  
+    A table is created using:  
+    - &lt;table&gt; → main container <br> 
+    - &lt;tr&gt; → table row  <br>
+    - &lt;th&gt; → table heading <br> 
+    - &lt;td&gt; → table data  <br>
+  </p>
 
-<pre>
-&lt;img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" 
-     height="300" width="300" alt="Beagle Dog Photo"&gt;
-</pre>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;New York&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;London&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+  </pre>
 
+    <table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>Chandra Prakash</td>
+    <td>21</td>
+    <td>New Delhi</td>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>22</td>
+    <td>London</td>
+  </tr>
+</table>
 
+<br><br><br>
+<p>Demo table format</p>
+<br>
+  <img src="data:image/png;base64,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" alt="">
+  <hr>
 
+  <h2>5. Table with Caption</h2>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;caption&gt;Student Marks&lt;/caption&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Maths&lt;/th&gt;&lt;th&gt;Science&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ravi&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;td&gt;85&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Priya&lt;/td&gt;&lt;td&gt;95&lt;/td&gt;&lt;td&gt;92&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
 
+<table border="1">
+  <caption>Student Marks</caption>
+  <tr><th>Name</th><th>Maths</th><th>Science</th></tr>
+  <tr><td>Chandra Prakash</td><td>90</td><td>85</td></tr>
+  <tr><td>Priya</td><td>95</td><td>92</td></tr>
+</table>
+  </pre>
+
+  <hr>
+
+  <h2>6. Table with Rowspan</h2>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;th&gt;Marks&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td rowspan="2"&gt;Rahul&lt;/td&gt;&lt;td&gt;Maths&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Science&lt;/td&gt;&lt;td&gt;85&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+<br><br>
+<table border="1">
+  <tr><th>Name</th><th>Subject</th><th>Marks</th></tr>
+  <tr><td rowspan="2">CHANDRA PRAKASH</td><td>Maths</td><td>80</td></tr>
+  <tr><td>Science</td><td>85</td></tr>
+</table>
+  </pre>
+
+  <hr>
+
+  <h2>7. Table with Colspan</h2>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th colspan="3"&gt;Employee Info&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Dept&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Aman&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;IT&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+<br><br>
+    <table border="1">
+  <tr><th colspan="3">Employee Info</th></tr>
+  <tr><th>Name</th><th>Age</th><th>Dept</th></tr>
+  <tr><td>Chandra Prakash</td><td>30</td><td>IT</td></tr>
+</table>
+  </pre>
+
+  <hr>
+
+  <h2>8. Nested Table</h2>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Student&lt;/th&gt;&lt;th&gt;Details&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Anita&lt;/td&gt;
+    &lt;td&gt;
+      &lt;table border="1"&gt;
+        &lt;tr&gt;&lt;td&gt;Age&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;City&lt;/td&gt;&lt;td&gt;Delhi&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+<table border="1">
+  <tr><th>Student</th><th>Details</th></tr>
+  <tr>
+    <td>Chandra Prakash Rai</td>
+    <td>
+      <table border="1">
+        <tr><td>Age</td><td>21</td></tr>
+        <tr><td>City</td><td>Delhi</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+  </pre>
+
+ 
+  <hr>
+
+  <h2>9. Combining Lists & Tables</h2>
+  <p>
+    We can combine both for advanced layouts.  
+    Example: Table showing categories with sub-items in a list.
+  </p>
+
+  
+
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Category&lt;/th&gt;&lt;th&gt;Items&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Fruits&lt;/td&gt;
+    &lt;td&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Apple&lt;/li&gt;
+        &lt;li&gt;Banana&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+<br><br>
+<table border="1">
+  <tr><th>Category</th><th>Items</th></tr>
+  <tr>
+    <td>Fruits</td>
+    <td>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+  </pre>
+
+  <hr>
+
+  <h2>10. Real-life Example: Time Table</h2>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;caption&gt;Weekly Class Time Table&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Day&lt;/th&gt;&lt;th&gt;9-10 AM&lt;/th&gt;&lt;th&gt;10-11 AM&lt;/th&gt;&lt;th&gt;11-12 PM&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Monday&lt;/td&gt;&lt;td&gt;Maths&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;td&gt;Science&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Tuesday&lt;/td&gt;&lt;td&gt;History&lt;/td&gt;&lt;td&gt;Maths&lt;/td&gt;&lt;td&gt;Computer&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+<br><br>
+<table border="1">
+  <caption>Weekly Class Time Table</caption>
+  <tr>
+    <th>Day</th><th>9-10 AM</th><th>10-11 AM</th><th>11-12 PM</th>
+  </tr>
+  <tr>
+    <td>Monday</td><td>Maths</td><td>English</td><td>Science</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td><td>History</td><td>Maths</td><td>Computer</td>
+  </tr>
+</table>
+  </pre>
+
+  
+  <hr>
+
+  <footer>
+    <p>📌 End of Lecture 3: Nested Lists & Tables | Only HTML</p>
+  </footer>
 
 </body>
 </html>
