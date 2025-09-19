@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4: File Paths & HTML Structure</title>
+</head>
+<body>
+      <nav>
+    <a href="index.html">Home</a> |
+    <a href="lecture1.html">Lecture 1</a> |
+    <a href="lecture2.html">Lecture 2</a> |
+    <a href="lecture3.html">Lecture 3</a> |
+    <a href="lecture4.html">Lecture 4</a> |
+    <a href="lecture5.html">Lecture 5</a> |
+    <a href="lecture6.html">Lecture 6</a>
+  </nav>
+
+
+<!-- Lecture Title -->
+<h1>Lecture 4: File Paths & HTML Boilerplate</h1>
+
+<!-- Video Section -->
+<h2>Video Lecture</h2>
+<iframe width="100%" height="480"
+        src="https://www.youtube.com/embed/k78lNSAB8VY?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X&index=4"
+        title="Lecture 4 Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+
+<hr>
+
+<!-- Section 1: File Paths -->
+<h2>1. File Path System</h2>
+<p>Websites are built from multiple files like HTML, CSS, JavaScript, and images. These files need to be well-organized in folders.</p>
+
+<h3>Relative File Paths</h3>
+<p>These are based on the location of the current file.</p>
+
+<pre>
+my-website/
+├── index.html
+├── about.html
+├── images/
+│   ├── logo.png
+│   └── banner.jpg
+└── pages/
+    ├── contact.html
+    └── terms.html
+</pre>
+
+<p><strong>Examples:</strong></p>
+<ul>
+    <li>Same folder: <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code></li>
+    <li>Sub-folder: <code>&lt;img src="images/logo.png" alt="Logo"&gt;</code></li>
+    <li>Parent folder: <code>&lt;img src="../images/logo.png" alt="Logo"&gt;</code></li>
+</ul>
+
+<h3>Absolute File Paths</h3>
+<p>These are full web addresses (URLs) for resources outside your site.</p>
+
+<pre>
+&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Html5_logo_and_wordmark.svg" alt="HTML5 Logo"&gt;
+</pre>
+
+<hr>
+
+<!-- Section 2: Boilerplate -->
+<h2>2. HTML Boilerplate</h2>
+<p>The boilerplate is the basic starting template for every HTML page.</p>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p><strong>Explanation:</strong></p>
+<ul>
+    <li><code>&lt;!DOCTYPE html&gt;</code>: Use HTML5</li>
+    <li><code>&lt;html lang="en"&gt;</code>: Language of the page</li>
+    <li><code>&lt;meta charset="UTF-8"&gt;</code>: Supports all characters</li>
+    <li><code>&lt;meta name="viewport"&gt;</code>: Makes site mobile-friendly</li>
+    <li><code>&lt;title&gt;</code>: Shown in browser tab</li>
+</ul>
+
+<hr>
+
+<!-- Section 3: Multi-page Websites -->
+<h2>3. Multi-Page Websites</h2>
+<p>Most websites have multiple pages like Home, About, Contact. You can connect them using navigation links.</p>
+
+<pre>
+&lt;nav&gt;
+    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html"&gt;About&lt;/a&gt;
+    &lt;a href="pages/contact.html"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+</pre>
+
+<hr>
+
+<!-- Section 4: Containers -->
+<h2>4. Containers: &lt;div&gt; &amp; &lt;span&gt;</h2>
+
+<h3>&lt;div&gt; Example</h3>
+<pre>
+&lt;div&gt;
+    &lt;img src="PLACEHOLDER_PROFILE_IMAGE" alt="Profile Picture"&gt;
+    &lt;h2&gt;John Doe&lt;/h2&gt;
+    &lt;p&gt;Web Developer&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+<h3>Class and ID</h3>
+<pre>
+&lt;div id="main-header"&gt;Header&lt;/div&gt;
+&lt;div class="profile"&gt;Profile 1&lt;/div&gt;
+&lt;div class="profile"&gt;Profile 2&lt;/div&gt;
+</pre>
+
+<h3>&lt;span&gt; Example</h3>
+<pre>
+&lt;p&gt;This product is &lt;span&gt;50% OFF&lt;/span&gt; today only!&lt;/p&gt;
+</pre>
+
+<hr>
+
+<!-- Section 5: Semantic Containers -->
+<h2>5. Semantic Containers</h2>
+<ul>
+    <li><code>&lt;header&gt;</code>: Top section (logo, nav)</li>
+    <li><code>&lt;footer&gt;</code>: Bottom section (contact info)</li>
+    <li><code>&lt;main&gt;</code>: Main content</li>
+</ul>
+
+<hr>
+
+<!-- Section 6: Image Placeholder -->
+<h2>6. Image Placeholders</h2>
+<p>Replace the link below with your own image.</p>
+<img src="PLACEHOLDER_IMAGE_URL" alt="Add your image here" width="300" height="200">
+
+<hr>
+
+<!-- Navigation -->
+<p>
+    <a href="lecture3.html">⟵ Previous Lecture</a> |
+    <a href="lecture5.html">Next Lecture ⟶</a>
+</p>
+
+</body>
+</html>

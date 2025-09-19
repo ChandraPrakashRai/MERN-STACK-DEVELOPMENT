@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lecture 7: HTML Media & Advanced Tags</title>
+</head>
+<body>
+    
+
+       <nav>
+    <a href="index.html">Home</a> |
+    <a href="lecture1.html">Lecture 1</a> |
+    <a href="lecture2.html">Lecture 2</a> |
+    <a href="lecture3.html">Lecture 3</a> |
+    <a href="lecture4.html">Lecture 4</a> |
+    <a href="lecture5.html">Lecture 5</a> |
+    <a href="lecture6.html">Lecture 6</a>
+  </nav>
+
+  <h1>Lecture 7: HTML Media & Advanced Tags</h1>
+  <hr>
+
+  <!-- Navigation -->
+  <p>
+    <a href="lecture6.html">⬅ Previous Lecture</a> |
+    <a href="lecture8.html">Next Lecture ➡</a>
+  </p>
+  <hr>
+
+  <!-- Video + PDF table -->
+ 
+        <h2>Lecture 7 — Video</h2>
+        <iframe width="600" height="315"
+          src="https://www.youtube.com/embed/NGYp1zCBthk"
+          title="Lecture 7 Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+     
+  <hr>
+
+  <!-- Theory content -->
+  <h2>Theory</h2>
+
+  <h3>1. Why Media Tags? Beyond Text & Images</h3>
+  <p>
+    Internet aur web pages ke pahle versions sirf text aur images hi display karte the. Agar video ya audio dikhani hoti thi, toh plugins (jaise Flash, Silverlight) use karne padte the — jo slow, insecure, aur incompatible hote the.
+  </p>
+  <p>
+    HTML5 ne ye problem solve kiya by introducing native media tags: <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code>. Inse browser pe bina kisi extra plugin ke media play kiya ja sakta hai.
+  </p>
+
+  <h3>2. Basic Usage of <code>&lt;video&gt;</code></h3>
+  <ul>
+    <li><b>src attribute:</b> video file ka path (local ya online).</li>
+    <li><b>controls:</b> agar ye attribute hai, toh video player controls (play/pause, volume, seek bar) dikhte hain.</li>
+    <li><b>width & height:</b> size specify kar sakte ho.</li>
+  </ul>
+  <pre>
+&lt;video src="sample-video.mp4" controls width="640" height="360"&gt;&lt;/video&gt;
+  </pre>
+
+  <h3>3. Advanced Video Tag Attributes</h3>
+  <p>Niche kuch attributes hain jo video ko zyada functional banate hain:</p>
+  <ul>
+    <li><code>autoplay</code>: Page load hote hi video start karega. (Lekin sound ke saath autoplay many browsers block karte hain.)</li>
+    <li><code>muted</code>: Video bina sound ke. Autoplay ke saath combined use hota hai.</li>
+    <li><code>loop</code>: Video end hone ke baad automatically dobara start karega.</li>
+    <li><code>poster</code>: Ek image dikhata hai jab video load nahi hua ho ya play nahi hua ho, jaise thumbnail.</li>
+  </ul>
+  <pre>
+&lt;video src="promo.mp4" controls autoplay muted loop poster="images/promo-thumbnail.jpg" width="640" height="360"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h3>4. Providing Multiple Formats for Compatibility</h3>
+  <p>Har browser sab video format nahi support karta. Ek format chalta hai Chrome me, lekin same format Safari ya mobile par na chale toh problem hogi.</p>
+  <p>Isliye <code>&lt;source&gt;</code> tag use karke multiple formats provide karte hain (jaise <code>.mp4</code>, <code>.webm</code>, <code>.ogg</code>) aur browser pehle supported format play karega.</p>
+  <pre>
+&lt;video controls poster="images/video-thumb.jpg"&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Sorry, your browser does not support embedded videos.
+&lt;/video&gt;
+  </pre>
+
+  <h3>5. The <code>&lt;audio&gt;</code> Tag</h3>
+  <p>Audio tag lagbhag video jaise hi behave karta hai, bas visual component nahi hota.</p>
+  <ul>
+    <li><code>src</code> ka path dena padta hai.</li>
+    <li><code>controls</code> attribute audio player controls ko enable karta hai.</li>
+    <li>Autoplay, loop etc attributes bhi common hain.</li>
+  </ul>
+  <pre>
+&lt;audio src="audio/song.mp3" controls&gt;&lt;/audio&gt;
+  </pre>
+
+  <h3>6. Accessibility: Subtitles, Captions, & Tracks</h3>
+  <p>
+    Sabhi users ek jaise nahi sun sakte ya dekh sakte hain. Kuch log deaf ya hard of hearing hote hain; kuch noisy environment ya background noise me video dekhte hain. 
+    <code>&lt;track&gt;</code> tag se captions/subtitles add ki ja sakti hain.
+  </p>
+  <pre>
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h3>7. Fallback Text & Browser Support</h3>
+  <p>
+    Agar browser video tag nahi samajhta (bahut purana browser), fallback text show karo jaise: "Your browser does not support embedded videos." 
+    Ye user ko batata hai ki wo video nahi dekh pa rahe hain, aur option ho sakta hai ki download link provide karo.
+  </p>
+
+  <pre>
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;source src="video.ogg" type="video/ogg"&gt;
+  Your browser does not support embedded videos.
+&lt;/video&gt;
+  </pre>
+
+  <hr>
+
+  <!-- Image Placeholder -->
+  <h2>Image / Resource Placeholder</h2>
+  <p>Diagram ya screenshot daalo yahan, jaise video formats ka comparison chart ya media player interface.</p>
+  <img src="images/lecture7-placeholder.png" alt="Lecture 7 Diagram" width="400">
+  <hr>
+
+  <!-- Summary -->
+  <h2>Summary</h2>
+  <ul>
+    <li>HTML5 media tags (<code>&lt;video&gt;</code> & <code>&lt;audio&gt;</code>) ne media embedding ko plugin-free banaya.</li>
+    <li>Use <code>controls</code>, <code>autoplay</code>, <code>muted</code>, <code>loop</code>, <code>poster</code> as needed.</li>
+    <li>Multiple source formats ensure compatibility across devices/browsers.</li>
+    <li>Accessibility ke liye captions/subtitles <code>&lt;track&gt;</code> ka use karo.</li>
+    <li>Fallback text zaroori hai old browsers ke liye.</li>
+  </ul>
+  <hr>
+
+  <!-- Navigation -->
+  <p>
+    <a href="lecture6.html">⬅ Previous Lecture</a> |
+    <a href="lecture8.html">Next Lecture ➡</a>
+  </p>
+
+</body>
+</html>

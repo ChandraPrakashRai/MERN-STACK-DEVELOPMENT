@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 5 - Forms in HTML</title>
+</head>
+<body>
+      <nav>
+    <a href="index.html">Home</a> |
+    <a href="lecture1.html">Lecture 1</a> |
+    <a href="lecture2.html">Lecture 2</a> |
+    <a href="lecture3.html">Lecture 3</a> |
+    <a href="lecture4.html">Lecture 4</a> |
+    <a href="lecture5.html">Lecture 5</a> |
+    <a href="lecture6.html">Lecture 6</a>
+  </nav>
+
+    <h1>Lecture 5: Forms in HTML</h1>
+    <hr>
+      <h2>14. Lecture Video</h2>
+    <p>Watch the detailed video here:</p>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/a4j9R_DvZ8M" 
+        title="Lecture 5 Video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <h2>1. Introduction</h2>
+    <p>Forms in HTML are used to collect information from users. Without forms, websites would only show information but could not take any input.</p>
+    <p><b>Examples where forms are used daily:</b></p>
+    <ul>
+        <li>Google search box</li>
+        <li>Login/Signup page</li>
+        <li>Online shopping checkout</li>
+        <li>Feedback forms</li>
+    </ul>
+    <hr>
+
+    <h2>2. Basic Form Structure</h2>
+    <p>A form always starts with the <code>&lt;form&gt;</code> tag.</p>
+    <pre>
+&lt;form&gt;
+    ... form elements go here ...
+&lt;/form&gt;
+    </pre>
+    <hr>
+
+    <h2>3. Text Input</h2>
+    <p>Used when user needs to type text (like name, username).</p>
+    <pre>
+&lt;label for="username"&gt;Enter your Name:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+    </pre>
+    <p><b>Example Use:</b> Registration form asking for your name.</p>
+    <hr>
+
+    <h2>4. Password Input</h2>
+    <p>Hides the characters entered (used in login forms).</p>
+    <pre>
+&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password"&gt;
+    </pre>
+    <hr>
+
+    <h2>5. Email Input</h2>
+    <p>Validates email format automatically.</p>
+    <pre>
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;
+    </pre>
+    <hr>
+
+    <h2>6. Radio Buttons</h2>
+    <p>Used when only one choice is allowed (example: gender, payment method).</p>
+    <pre>
+&lt;p&gt;Select Gender:&lt;/p&gt;
+&lt;input type="radio" id="male" name="gender" value="male"&gt;
+&lt;label for="male"&gt;Male&lt;/label&gt;
+
+&lt;input type="radio" id="female" name="gender" value="female"&gt;
+&lt;label for="female"&gt;Female&lt;/label&gt;
+    </pre>
+    <hr>
+
+    <h2>7. Checkboxes</h2>
+    <p>Used when multiple selections are possible (example: hobbies, food preferences).</p>
+    <pre>
+&lt;p&gt;Select Hobbies:&lt;/p&gt;
+&lt;input type="checkbox" id="cricket" name="hobby" value="cricket"&gt;
+&lt;label for="cricket"&gt;Cricket&lt;/label&gt;
+
+&lt;input type="checkbox" id="music" name="hobby" value="music"&gt;
+&lt;label for="music"&gt;Music&lt;/label&gt;
+
+&lt;input type="checkbox" id="reading" name="hobby" value="reading"&gt;
+&lt;label for="reading"&gt;Reading&lt;/label&gt;
+    </pre>
+    <hr>
+
+    <h2>8. Textarea</h2>
+    <p>For longer text like messages, feedback, comments.</p>
+    <pre>
+&lt;label for="feedback"&gt;Your Feedback:&lt;/label&gt;&lt;br&gt;
+&lt;textarea id="feedback" name="feedback" rows="4" cols="40"&gt;&lt;/textarea&gt;
+    </pre>
+    <hr>
+
+    <h2>9. Dropdown (Select)</h2>
+    <p>For choosing one option from many.</p>
+    <pre>
+&lt;label for="country"&gt;Select Country:&lt;/label&gt;&lt;br&gt;
+&lt;select id="country" name="country"&gt;
+    &lt;option value=""&gt;--Select--&lt;/option&gt;
+    &lt;option value="in"&gt;India&lt;/option&gt;
+    &lt;option value="us"&gt;USA&lt;/option&gt;
+    &lt;option value="uk"&gt;UK&lt;/option&gt;
+&lt;/select&gt;
+    </pre>
+    <hr>
+
+    <h2>10. Other Useful Inputs</h2>
+    <ul>
+        <li><code>type="number"</code> → Age, Quantity</li>
+        <li><code>type="date"</code> → Birthday, Appointment</li>
+        <li><code>type="file"</code> → Upload documents</li>
+        <li><code>type="color"</code> → Choose theme color</li>
+        <li><code>type="range"</code> → Select volume or brightness</li>
+    </ul>
+    <pre>
+&lt;label for="age"&gt;Enter Age:&lt;/label&gt;
+&lt;input type="number" id="age" name="age"&gt;
+    </pre>
+    <hr>
+
+    <h2>11. Submit Button</h2>
+    <p>Sends data from the form to the server.</p>
+    <pre>
+&lt;input type="submit" value="Submit Form"&gt;
+    </pre>
+    <hr>
+
+    <h2>12. Real-Life Example: Login Form</h2>
+    <pre>
+&lt;form&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Login"&gt;
+&lt;/form&gt;
+    </pre>
+    <hr>
+
+    <h2>13. Summary</h2>
+    <ul>
+        <li><b>Form</b> = Collect user input</li>
+        <li><b>Text/Password/Email</b> = Basic fields</li>
+        <li><b>Radio</b> = One choice</li>
+        <li><b>Checkbox</b> = Multiple choices</li>
+        <li><b>Textarea</b> = Long text</li>
+        <li><b>Dropdown</b> = Select from list</li>
+        <li><b>Submit</b> = Send data</li>
+    </ul>
+    <hr>
+<hr>
+<p>
+    <a href="lecture4.html">⟵ Previous Lecture</a> |
+    <a href="lecture6.html">Next Lecture ⟶</a>
+</p>
+
+  
+
+</body>
+</html>

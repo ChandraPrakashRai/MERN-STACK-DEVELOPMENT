@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 2 — HTML Basics</title>
+</head>
+<body>
+  <header>
+    <h1>Lecture Notes Hub</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="lecture1.html">Lecture 1</a> |
+      <a href="lecture2.html">Lecture 2</a> |
+      <a href="lecture3.html">Lecture 3</a> |
+      <a href="lecture4.html">Lecture 4</a> |
+      <a href="lecture5.html">Lecture 5</a> |
+      <a href="lecture6.html">Lecture 6</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>Lecture 2 — Video</h2>
+    <p>Watch the lecture video below </p>
+  <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/GkZN_-HMCJ8?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X&index=2" 
+        title="Lecture 2 Video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
+
+    <h2>Notes</h2>
+
+    <h3>HTML: Hyper Text Markup Language</h3>
+    <ul>
+      <li><strong>HyperText:</strong> Create links connecting web pages together.</li>
+      <li><strong>Markup Language:</strong> Use tags to give content meaning and structure.</li>
+      <!-- <li>First website: <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">CERN Project</a></li> -->
+    </ul>
+
+    <h3>Install Required Software</h3>
+    <ul>
+      <li>Visual Studio Code: <a href="https://code.visualstudio.com/" target="_blank">Download Here</a></li>
+      <li>Extensions:
+        <ul>
+          <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server" target="_blank">Live Preview / Live Server</a></li>
+          <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>1. Headings (&lt;h1&gt; to &lt;h6&gt;)</h3>
+    <ul>
+      <li>Define titles and subtitles.</li>
+      <li>Example:
+        <pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+...
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+
+        </pre>
+      </li>
+      <li>Purpose: structure content for humans and machines.</li>
+    </ul>
+
+    <h3>2. Paragraph (&lt;p&gt;)</h3>
+    <ul>
+      <li>Groups sentences and blocks of text.</li>
+      <li>Example:
+        <pre>
+&lt;p>This is a paragraph.&lt;/p&gt;
+&lt;p>This is another paragraph.&lt;/p&gt;
+        </pre>
+      </li>
+    </ul>
+
+    <h3>3. Horizontal Rule (&lt;hr&gt;)</h3>
+    <ul>
+      <li>Defines a thematic break / separates content.</li>
+      <li>Example:
+        <pre>
+&lt;p>Topic 1&lt;/p&gt;
+&lt;hr&gt;
+&lt;p>Topic 2&lt;/p&gt;
+        </pre>
+      </li>
+    </ul>
+
+    <h3>4. Line Break (&lt;br&gt;)</h3>
+    <ul>
+      <li>Creates a single line break.</li>
+      <li>Example:
+        <pre>
+&lt;p>Line 1&lt;br&gt;
+Line 2&lt;/p&gt;
+        </pre>
+      </li>
+    </ul>
+
+    <h3>5. List Elements (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h3>
+    <ul>
+      <li>Unordered list (&lt;ul&gt;) → bullets</li>
+      <li>Ordered list (&lt;ol&gt;) → numbers</li>
+      <li>List item (&lt;li&gt;) → each element in a list</li>
+      <li>Example:
+        <pre>
+&lt;ul&gt;
+  &lt;li>Tea Bag&lt;/li&gt;
+  &lt;li>Water&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li>Boil water&lt;/li&gt;
+  &lt;li>Add tea&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+      </li>
+    </ul>
+
+    <h3>6. Anchor Tag (&lt;a&gt;)</h3>
+    <ul>
+      <li>Creates hyperlinks.</li>
+      <li>Example:
+        <pre>
+&lt;a href="https://www.coderarmy.in/" target="_blank"&gt;Visit Coder Army&lt;/a&gt;
+        </pre>
+      </li>
+      <li>Target attribute:
+        <ul>
+          <li>_self → open in same tab</li>
+          <li>_blank → open in new tab</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>7. Image Tag (&lt;img&gt;)</h3>
+    <ul>
+      <li>Embeds an image on the page.</li>
+      <li>Example:
+        <pre>
+&lt;img src="IMAGE_LINK_HERE" alt="Description" width="300" height="300"&gt;
+        </pre>
+      </li>
+      <li>Replace <em>IMAGE_LINK_HERE</em> with your actual image URL.</li>
+    </ul>
+
+    <h3>Images / Resources</h3>
+    <p>Add images below (replace IMAGE_LINK_HERE):</p>
+    <img src="IMAGE_LINK_HERE" alt="Image Placeholder 1">
+    <img src="IMAGE_LINK_HERE" alt="Image Placeholder 2">
+
+    <hr>
+    <nav>
+      <a href="lecture1.html">← Previous</a> |
+      <a href="lecture3.html">Next →</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Lecture 2 — Update notes, images, and video link as required.</p>
+  </footer>
+</body>
+</html>
