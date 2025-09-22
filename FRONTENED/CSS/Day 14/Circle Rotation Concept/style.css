@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: pink;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition-property: ; */
+
+
+   
+
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background: red;
+        animation-name: moving;
+    animation-duration:5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+  
+   animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    from{
+        background-color: red;
+        transform: rotate(0deg);
+    }
+
+    to{
+        background-color: black;
+        transform: rotate(0deg);
+
+    }
+    
+}
