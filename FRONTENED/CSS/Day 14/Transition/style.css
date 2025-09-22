@@ -1,0 +1,41 @@
+ .container {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+      background-color: pink;
+      justify-content: center;
+      align-items: center;
+        gap: 30px;
+        perspective: 800px;
+
+     
+    }
+
+    .box {
+      height: 200px;
+      width: 200px;
+      
+      background-color: yellow;
+      border-radius: 10px;
+      /* transition: all 0.5s ease-in-out; shorthand */
+
+      transition-property: all;
+      /* transition-delay: 15s; */
+      transition-duration: 2s;
+
+         /* transform: rotate(30deg); */
+         transition-timing-function:ease-in ;
+      
+    }
+    
+    .box:hover{
+        background-color: #fff;
+        /* height: 500px; */
+        /* transform: translateX(60px); */
+        /* transform: scaleX(3); */
+        /* transform: translateX(60px); */
+        /* transform: rotate(30deg); */
+        transform: translateZ(300px);
+        transform: rotateX(360deg);
+      
+    }
