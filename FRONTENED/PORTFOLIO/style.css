@@ -36,7 +36,85 @@ body{
     padding: 40px;
 }
 
-.image{
-    height: 100px;
-    width: 50px;
+/* profile section ka css */
+.profile{
+    text-align: center;  /* sabhi inline element centre me chale jayenge */
 }
+
+.profile img{
+   height: 120px;
+   width: 120px;
+   border-radius: 50%;
+   border: 1px solid #3a3a3a;
+}
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+
+.profile p{
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    color: #FFBF00;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/*  contact section ka css */
+
+.contact{
+    margin-top: 40px;
+    border-top: 2.5px solid #3a3a3a;
+    padding-top: 20px;
+    
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+}
+.email , .phone {
+    margin-bottom: 15px;
+}
+
+/* social media */
+.social{
+    margin-top: 40px;
+    border-top: 2.5px solid #3a3a3a;
+    padding-top: 20px;
+      display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically */
+    text-align: center;
+    
+    
+}
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 15px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+    transition: filter 0.5 ease;
+}
+
+.social img:hover{
+        filter: grayscale(0) invert(0);
+        height: 40px;
+        width: 45px;
+
+}
+
