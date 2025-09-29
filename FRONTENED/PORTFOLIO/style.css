@@ -123,9 +123,11 @@ body{
     height: 24px;
     width: 24px;
     margin-left: 15px;
-    filter: grayscale(1) invert(0.7);
+    filter: grayscale(1) invert(0.7); 
     transition: filter 0.3s ease;
     transition: filter 0.5 ease;
+
+    
 }
 
 .social img:hover{
