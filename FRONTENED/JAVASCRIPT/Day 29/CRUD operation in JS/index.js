@@ -18,7 +18,7 @@
     //  select kro 
   const elem2 =   document.getElementById("second");
   elem2.after(newElem2);
-    elem2.style.backgroundColor = "pink";
+    elem2.style.backgroundColor = "yellow";
     elem2.style.color = "aqua";
     elem2.style.fontSize = "40px";
 
