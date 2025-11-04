@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #4A4A9B; /* Deep Purple */
+    --secondary-color: #6B6BA5; /* Lighter Purple/Blue */
+    --background-color: #F8F9FA; /* Off-White/Light Gray */
+    --chatbot-bg: #FFFFFF; /* Chatbot Container */
+    --user-bubble-bg: #4A4A9B;
+    --user-bubble-text: #FFFFFF;
+    --chatbot-bubble-bg: #EAEAF2;
+    --chatbot-bubble-text: #333333;
+    --input-border: #DDDDDD;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-strong: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    flex-direction: column;
+}
+
+/* --- Chatbot Container --- */
+.chatbot-container {
+    width: 90%;
+    max-width: 450px;
+    background-color: var(--chatbot-bg);
+    border-radius: 18px;
+    box-shadow: var(--shadow-strong);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --- Header --- */
+#header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    padding: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* --- Conversation --- */
+#conversation {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* --- Messages --- */
+.chatbot-message {
+    display: flex;
+    align-items: flex-end;
+    max-width: 85%;
+}
+
+.chatbot {
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.user-message {
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.chatbot-text {
+    font-size: 0.95em;
+    padding: 12px 18px;
+    border-radius: 20px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    box-shadow: var(--shadow-light);
+}
+
+.user-message .chatbot-text {
+    background-color: var(--user-bubble-bg);
+    color: var(--user-bubble-text);
+    border-bottom-right-radius: 5px;
+}
+
+.chatbot .chatbot-text {
+    background-color: var(--chatbot-bubble-bg);
+    color: var(--chatbot-bubble-text);
+    border-bottom-left-radius: 5px;
+}
+
+/* --- Timestamp Hover --- */
+p[sentTime]:hover::after {
+    content: attr(sentTime);
+    position: absolute;
+    bottom: -18px;
+    font-size: 0.7em;
+    color: #666;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+/* --- Input Area --- */
+#input-form {
+    padding: 12px 15px;
+    background-color: #fcfcfc;
+    border-top: 1px solid var(--input-border);
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#input-field {
+    flex: 1;
+    height: 45px;
+    border: 1px solid var(--input-border);
+    border-radius: 25px;
+    padding: 0 15px;
+    font-size: 1em;
+    background: #FFFFFF;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+#input-field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 74, 155, 0.2);
+    outline: none;
+}
+
+#submit-button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.send-icon {
+    width: 22px;
+    filter: brightness(0) invert(1);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.85em;
+    letter-spacing: 0.3px;
+}
