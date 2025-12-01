@@ -1,0 +1,28 @@
+{
+  "name": "chandrabackend",
+  "version": "1.0.0",
+  "description": "a basic app to deploy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChandraPrakashRai/MERN-STACK-DEVELOPMENT.git"
+  },
+  "keywords": [
+    "node",
+    "cp",
+    "chai"
+  ],
+  "author": "Chandra Prakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChandraPrakashRai/MERN-STACK-DEVELOPMENT/issues"
+  },
+  "homepage": "https://github.com/ChandraPrakashRai/MERN-STACK-DEVELOPMENT#readme",
+  "dependencies": {
+    "express": "^5.2.0"
+  }
+}
+ 
